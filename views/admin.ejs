@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="web">
+<head>
+	<meta charset="UTF-8">
+	<title>admin</title>
+	<script src="vender/angular/angular.min.js"></script>
+	<script src="vender/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<!-- <script src="vender/ng-dialog/js/ngDialog.min.js"></script> -->
+	<script src="/vender/angular-cookies/angular-cookies.min.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-controller="blogListCtrl">
+	<div content-header logo-name="后台管理"></div>
+	<% if(name) {%>
+	<p class="loginNameBox">欢迎你，<%= name %> 帅哥&nbsp;&nbsp;&nbsp;&nbsp;<a href="/exit">退出登录</a></p>
+	<%}%>
+	<div class="ablogList" >
+		<h3 class="mt-30">博客列表</h3>
+		<table class="ablogContent" >
+			<thead>
+				<tr>
+					<th width="10%">Number</th>
+					<td width="20%">Date</td>
+					<td width="30%">Title</td>
+					<td width="20%">Delete</td>
+					<td width="20%">Modify</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="blog in blogLists">
+					<th ng-bind="blog.num"></th>
+					<td ng-bind="blog.date"></td>
+					<td><a ng-click="showBlog(blog)" ng-bind="blog.title"></a></td>
+					<td ng-click="deleteBlog(blog.id)"><a href="" >删除</a></td>
+					<td ng-click="modify(blog.id)"><a >修改</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div page apage="pageNum"></div>
+		<a class="writeBlogBtn" href="/managemsg">写博客</a>
+	</div>
+	<div class="bg-dialog" style="display: none;">
+		<div blog-dialog></div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>

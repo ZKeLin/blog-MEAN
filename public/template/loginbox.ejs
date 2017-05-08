@@ -1,0 +1,17 @@
+<div class="loginBox p-a">
+	<form method="post" action="/manlogin">
+		<h3 class="">管理员登录</h3>
+		<div class="userBox">
+			<input class="pl-10" ng-blur="validateName()" name="managerName" ng-model="managerName" type="text" placeholder="user">
+			<p class="hintInfo" ng-bind="errNhint"></p>
+		</div>
+		<div class="userBox">
+			<input class="pl-10" ng-blur="validatePassword()" name="password" ng-model="password" type="password" placeholder="password">
+			<p class="hintInfo" ng-bind="errPhint"></p>
+		</div>
+		<div class="btnBox mt-10">
+			<button type="submit" ng-disabled="errPhint || errNhint" class="button-sub ml-15">登录</button>
+			<button class="button-rest ml-15" type="reset">取消</button>
+		</div>
+	</form>
+</div>

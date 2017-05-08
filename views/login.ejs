@@ -1,0 +1,25 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="web">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="vender/angular/angular.min.js"></script>
+	<script src="vender/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="/vender/angular-cookies/angular-cookies.min.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="main">
+		<div web-header></div>
+		<div class="bgBox p-r">
+			<img src="images/backgroundIMG.png" alt="">
+			<div login-box></div>
+		</div>
+	</div>
+	<script>
+		document.getElementsByTagName('html')[0].style.fontSize = '14px';
+		//console.log(window.screen.width / 100 +'px');
+	</script>
+	<script src="js/index.js"></script>
+</body>
+</html>

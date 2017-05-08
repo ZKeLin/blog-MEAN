@@ -1,0 +1,21 @@
+<div class="blogmanage">
+	<div class="formBox">
+		<form action="/add" method="post">
+			<div class="titleBox fbBox">
+				<input type="text" ng-model="title" name="title" placeholder="请填写title">
+			</div>
+			<div class="authorBox fbBox">
+				<input type="text" ng-model="author" name="author" placeholder="请填写author">
+			</div>
+			<div class="contentBox fbBox">
+				<textarea ng-model="content" name="content" id="" cols="30" rows="10" placeholder="请填写content"></textarea>
+			</div>
+			<div class="fbBtnBox ">
+				<button ng-disabled="isModify" type="submit" class="addition">添加</button>
+			</div>
+			<div class="fbBtnBox ">
+				<button ng-disabled="!isModify"  type="button" ng-click="modify(id)" class="modify" >修改</button>
+			</div>
+		</form>
+	</div>
+</div>

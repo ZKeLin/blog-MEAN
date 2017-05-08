@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="web">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<script src="/vender/angular/angular.min.js"></script>
+	<script src="/vender/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="/vender/angular-cookies/angular-cookies.min.js"></script>
+	<link rel="stylesheet" href="/css/index.css">
+
+</head>
+<body>
+	<div content-header logo-name="kelin"></div>
+	<span class="manageBtn"><a href="/login">管理</a></span>
+	<div class="contentBox" ng-controller="blogContentCtrl">
+		<div list-box lists="titleLists"></div>
+		<div blog-content></div>
+	</div>
+	<script src="/js/index.js"></script>
+</body>
+</html>

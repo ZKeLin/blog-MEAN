@@ -1,0 +1,588 @@
+.listNav::-webkit-scrollbar {
+  width:6px;
+}
+            
+/* Track */
+.listNav::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+            
+/* Handle */
+.listNav::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background:#c1c1c1; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+              
+}
+.listNav::-webkit-scrollbar-thumb:window-inactive {
+  background: #c1c1c1; 
+              
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.disabled{
+  background-color: #9a9898;
+}
+.bgBox img {
+  width: 100%;
+  height: 100%;
+}
+.loginBox {
+  border-radius: 10px;
+  transform: scale(1, 1);
+  transition: all 1s;
+  width: 500px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -250px;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  opacity: 0.6;
+}
+.loginBox h3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+.loginBox .userBox {
+  width: 250px;
+  margin: 30px auto;
+}
+.loginBox .userBox input {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.loginBox .btnBox {
+  width: 240px;
+  margin: 0 auto;
+}
+.loginBox .hintInfo{
+  text-align: center;
+  font-size: 8px;
+  color: red;
+}
+.loginBox .btnBox button {
+  border-radius: 5px;
+  border: 0;
+  width: 100px;
+  height: 30px;
+}
+.loginBox .btnBox .button-sub {
+  background: #0cc259;
+}
+.loginBox .btnBox .button-rest {
+  background: #f7263e;
+}
+.loginBox:hover {
+  transform: scale(1.2, 1.2);
+  opacity: 0.8;
+  transition: all 1s;
+}
+/*index.html directive web-header*/
+.webheader {
+  height: 30px;
+  line-height: 30px;
+  background: #10f045;
+  width: 100%;
+  z-index: 99;
+}
+.webheader a {
+  padding-left: 50px;
+  color: #fff;
+}
+/*main.html*/
+.manageBtn{
+  display: inline-block;
+  top: 10px;
+  right: 30px;
+  position: absolute;
+}
+.manageBtn a{
+  color: #fff;
+}
+/*main.html  directive content-header*/
+.contentHeader {
+  background: #444;
+  height: 100px;
+}
+.contentHeader .personLogo {
+  margin-top: 20px;
+  margin-left: 100px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  background-image: url(/images/aa.jpg);
+  background-size: 100% 100%;
+  background-clip: content-box;
+}
+.contentHeader .headerIntro {
+  float: left;
+  margin-top: 25px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+.contentHeader p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Microsoft Yahei";
+  display: inline-block;
+  top: 50%;
+  right: 30%;
+}
+/*main.html  contentBox*/
+.contentBox .listBox {
+  float: left;
+  width: 25%;
+}
+.contentBox .listBox .listNav {
+
+  margin-top: 20px;
+  margin-left: 150px;
+  padding-bottom: 70px;
+  height: 350px;
+  overflow-y: auto;
+}
+.contentBox .listBox .listNav li {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px dotted #c5c3c3;
+}
+.contentBox .listBox .listNav li a {
+  color: #000;
+}
+.contentBox .listBox .listNav li p {
+  font-size: 12px;
+
+}
+/*main.html blogContentBox*/
+.blogContentBox {
+  margin-top: 20px;
+  float: left;
+  width: 60%;
+  margin-left: 20px;
+}
+.blogContentBox article {
+  padding: 0 50px;
+}
+.blogContentBox article .article_r {
+  text-align: center;
+  color: #a5aba6;
+}
+.blogContentBox article h3 {
+  font-size: 24px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.blogContentBox article section {
+  margin-top: 30px;
+}
+.blogContentBox article section p {
+  text-indent: 2em;
+  margin-top: 10px;
+}
+.blogContentBox article footer{
+  margin-top: 40px;
+  text-align: center;
+}
+footer span.icon{
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+footer span .zanIcon{
+  margin-left: 11px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/zanIcon_02.png);
+}
+footer span .pingIcon{
+  margin-left: 11px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/pingIcon_02.png);
+}
+footer span .activeIcon{
+  background-position: 0 -18px;
+}
+/*admin.html ablogList*/
+.ablogList {
+  text-align: center;
+}
+.ablogList h3 {
+  margin-bottom: 15px;
+}
+.ablogList .ablogContent {
+  width: 60%;
+  margin: 0 auto;
+}
+.ablogList .ablogContent tr,
+.ablogList .ablogContent td,
+.ablogList .ablogContent th {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.ablogList .ablogContent td {
+  border-left: 0px;
+  border-right: 0px;
+  line-height: 40px;
+}
+.ablogList .ablogContent td a {
+  color: #000;
+}
+.ablogList .ablogContent thead {
+  background-color: #d9edf7;
+}
+.ablogList .ablogContent tbody tr:hover {
+  background-color: #f5f5f5;
+}
+.ablogList .page {
+  margin-top: 10px;
+}
+.ablogList .page li {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.ablogList .page li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 2px 8px;
+  color: #000;
+}
+.ablogList .page a:active,
+.ablogList .page a:visited,
+.ablogList .page a:focus {
+  background-color: #e6e6e6;
+  color: #000;
+  border-color: #adadad;
+}
+.ablogList .writeBlogBtn {
+  margin-top: 20px;
+  display: inline-block;
+  line-height: 40px;
+  width: 150px;
+  height: 40px;
+  background-color: #f11323;
+  border-radius: 5px;
+  opacity: 0.8;
+  color: #fff;
+}
+.ablogList .writeBlogBtn:hover {
+  opacity: 1;
+}
+.loginNameBox{
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  color: #fff;
+}
+.loginNameBox a{
+  color: #0e19f2;
+}
+/*managemsg.html */
+.blogmanage .formBox {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.blogmanage .formBox .fbBox {
+  margin-left: 30px;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.blogmanage .formBox .fbBox input {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.blogmanage .formBox .fbBox textarea {
+  padding: 6px;
+}
+.blogmanage .formBox .fbBox input,
+.blogmanage .formBox .fbBox textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Microsoft Yahei";
+}
+.blogmanage .formBox .fbBtnBox {
+  display: inline-block;
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+.blogmanage .formBox .fbBtnBox button {
+  width: 100%;
+  height: 35px;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.blogmanage .formBox .fbBtnBox label {
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.blogmanage .formBox .fbBtnBox .addition {
+  background-color: #5cb85c;
+}
+.blogmanage .formBox .fbBtnBox .addition:hover {
+  background-color: #449d44;
+}
+.blogmanage .formBox .fbBtnBox .modify {
+  background-color: #337ab7;
+}
+.blogmanage .formBox .fbBtnBox .modify:hover {
+  background-color: #286090;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.d-b {
+  display: block;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-i {
+  display: inline;
+}
+.p-r {
+  position: relative;
+}
+.p-a {
+  position: absolute;
+}
+.p-f {
+  position: fixed;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.pr-30 {
+  padding-right: 30px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.f-r {
+  float: right;
+}
+.f-l {
+  float: left;
+}
+.clearFix:after {
+  content: '';
+  clear: both;
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+.ta-c {
+  text-align: center;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-r {
+  text-align: right;
+}
+/* 颜色属性 */
+/*blogDialog*/
+.bg-dialog{
+  width: 100%;
+  height: 100%;
+  background: rgba(190,185,185,.3);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  display: none;
+}
+.blogDialog{
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 700px;
+  margin:100px auto;
+  z-index: 999;
+  position: relative;
+}
+.blogDialog i{
+  position: absolute;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  top: 5px;
+  right: 10px;
+  background-image: url(/images/close-icons_03.png);
+}
+.blogDialog h3{
+  margin-top: 10px;
+  text-align: center;
+}
+.blogDialog p{
+  padding: 10px 20px 0 20px;
+  text-align: center;
+}
+.blogDialog section{
+  height: 400px;
+  overflow: auto;
+}
+.blogDialog section p{
+  text-indent: 2em;
+}
+.blogDialog section::-webkit-scrollbar {
+  width:6px;
+}
+            
+/* Track */
+.blogDialog section::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+            
+/* Handle */
+.blogDialog section::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background:#c1c1c1; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+              
+}
+.blogDialog section::-webkit-scrollbar-thumb:window-inactive {
+  background: #c1c1c1; 
+              
+}
+/* end blogDialog*/

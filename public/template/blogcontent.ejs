@@ -1,0 +1,18 @@
+<div class="blogContentBox">
+	<article>
+		<h3 ng-bind="blog.title"></h3>
+		<p class="article_r">author:&nbsp;&nbsp;<span ng-bind="blog.author"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date:&nbsp;&nbsp;<span ng-bind="blog.date"></span></p>
+		<section>
+			<p ng-repeat="content in blog.content" ng-bind="content"></p>
+		</section>
+		<footer>
+			<span ng-click="toggleZan(blog.zanNum,blog._id)" class="icon zanIconBox">
+				<i class="zanIcon"></i>
+				<p id="zanId" ng-bind="num[blog._id] || blog.zanNum"></p>
+			</span>
+			<span class="icon pingIconBox ">
+				<i class="pingIcon"></i>评论
+			</span>
+		</footer>
+	</article>
+</div>

@@ -1,0 +1,13 @@
+[{
+	"id":1,
+	"title": "blog title1",
+	"name": "kelin",
+	"date": "2017/3/24",
+	"content": "fdsfdfdsds但是块级元素转display:inline-block兼容不好，他会将其布局转为layout，从而使内联元素拥有了display:inline-block属性的表征。\n解决方法： 1、 先使用display:inline-block属性触发块元素，然后再定义display:inline，让块元素呈递为内联对象（两个display 要先后放在两个CSS声明中才有效果，这是IE的一个经典bug，如果先定义了display:inline-block，然后再将display设回 inline或block，layout不会消失）。代码如下（...为省略的其他属性内容）： div {display:inline-block;...} div {display:inline;}"
+},{
+	"id":2,
+	"title": "blog title2",
+	"name": "liyue",
+	"date": "2017/3/23",
+	"content": "IE 6 ，7对display:inline-block兼容不好，对于行内元素转为display:inline-block兼容可以，但是块级元素转display:inline-block兼容不好，他会将其布局转为layout，从而使内联元素拥有了display:inline-block属性的表征。\n解决方法： 1、 先使用display:inline-block属性触发块元素，然后再定义display:inline，让块元素呈递为内联对象（两个display 要先后放在两个CSS声明中才有效果，这是IE的一个经典bug，如果先定义了display:inline-block，然后再将display设回 inline或block，layout不会消失）。代码如下（...为省略的其他属性内容）： div {display:inline-block;...} div {display:inline;}"
+}]
